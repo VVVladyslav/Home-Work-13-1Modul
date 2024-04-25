@@ -3,6 +3,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 
 public class Demo {
+    
     private final static String UR ="https://jsonplaceholder.typicode.com/users";
     private final static String URid= "https://jsonplaceholder.typicode.com/users/2";
     private final static String URname= "https://jsonplaceholder.typicode.com/users";
