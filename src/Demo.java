@@ -20,34 +20,19 @@ public class Demo {
 
         System.out.println(createdUser);
 
-/////////////////////////////////////////////////
         String InformationAllCustomersById = Utilki.sendGet(URI.create(String.format("%s?id=%d", URid, createdUser.getId())));
-
         System.out.println("All Customers By Id = " + InformationAllCustomersById);
 
-/////////////////////////////////////////////////
-
         String InformationAllCustomersByName = Utilki.sendGet(URI.create(String.format("%s?username=%s", URname, createdUser.getUsername())));
-
         System.out.println("Customers By Name = " + InformationAllCustomersByName);
 
-/////////////////////////////////////////////////
-
         String InformationAllCustomers = Utilki.sendGet(URI.create(UR));
-
         System.out.println("All Customers = " + InformationAllCustomers);
 
-/////////////////////////////////////////////////
-
         int InformStatusDel = Utilki.sendDel(URI.create(URid));
-
         System.out.println(InformStatusDel);
 
-/////////////////////////////////////////////////
-
         Utilki.GetTask(URI.create(URtask));
-////////////////////////////////////////////////
         Utilki.GetComets(URI.create(URcoments));
-
     }
 }
